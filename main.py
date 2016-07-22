@@ -53,7 +53,8 @@ class WeatherHandler(BaseHandler):
 
         self.render_template("vreme.html", params=params)
 
-
+class NovHandler(BaseHandler):
+    pass
 
 app = webapp2.WSGIApplication([
     webapp2.Route('/', MainHandler),
